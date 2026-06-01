@@ -1,8 +1,9 @@
 \documentclass{article}
 \pagestyle{empty}
 \usepackage{amsmath, amssymb,amsfonts}
+\parindent 0px
 	\title{My First \LaTeX{} Document}
-	\author{Phil}
+	\author{PHILIP THEURI}
 	\date{\today}
 	
 	\begin{document}
@@ -13,9 +14,11 @@
 	
 	\section{Introduction}
 	
-	\LaTeX{} is used for creating professional reports, assignments, books and research papers
+	\LaTeX{} is used for creating professional reports, assignments, books and research paper
 	
 	I am learning \LaTeX{} offline using TeXstudio and MiKTeX.
+	
+	(the added section of parident is to forbid the computer from indenting my work and making it look shoddy . Ie to stop making new paragraphs unless i authorize it)
 	
 	\section{\LaTeX\ Learning}
 	\subsection{superscripts}
@@ -71,5 +74,64 @@
   
   $$\frac{1}{   (1+\frac{11}{x})    }$$
   
-  
+  \section{calculus.} 
+  \subsection{brackets}
+  \subsection{curved brackets}
+  The distributive property states that $a(b+c)=ab+ac$, for all $a, b, c \in \mathbb{R}$.\\
+  (Using the mathmode to display equations. For example i want to display a system of two equations i can use:\\
+  \begin{align}
+  	2x + y &= 5\\
+  	x -y &= 1
+  	\end{align}\\
+  	
+  	This merely creates two separate inline equations. You can't align the equal sign,number the equations, or treat them as one mathematical block hence you have to use the amsmath in this case.
+  	the(dollar)symbol is used to line up the equal signs.\\[0.2pt]
+  	
+  		Use the single dollar sign for short inline equations eg;The area is $A=\pi r^2$\\[1pt] 		
+  		you can also use it for different cases as align, gather, cases, matrix, etc.just by using amsmath
+  		for professionalism you can use \[x^2 + y^2 = z^2\] to display inline math mode rather than the previous format of using $$x^2 + y^2 = z^2$$-they have got the same output but tidying up the work requires the square brackets)\\[6pt]
+  		The equivalence class of $a$ is $[a]$
+  		
+  		\subsection{curly brackets}
+  		The curly brackets act as a reserved word for latex hence it won't print out as int he case below:
+  		
+  		"The section $a$ is defined to be ${1, 2, 3}$."
+  		you need to use a backslash before and after the curly brackets just as we a seen earlier in a similar case.\\
+  		
+  		Now using the slash back;"The section $a$ is defined to be $\{1, 2, 3\}$."
+  		
+  		\subsection{The dollar symbol}
+  		It is also a reserved symbol used to display math mode hence it can't be printed out normally if you want to print it out.
+  		
+  		Eg."the movie ticket costs $\$11.50$
+  		
+  		$$2(\frac{1}{x^2-1})$$ \ldots this will print out a message not well covered brackets as we would require, you can use a single \$ or use $$2\left(\frac{1}{x^2-1}\right)$$ 	The backslash left before the first curly bracket and back slash right before the last curly bracket will now enable the numbers to be well indented
+  		
+  		$$2\left\{\frac{1}{x^2-1}\right\}$$
+  		
+  		$$2\left[\frac{1}{x^2-1}\right]$$
+  		$$2\left[\frac{1}{x^2-1}\right]$$
+  		$$2\left(   \frac{1}{x^2-1}       \right)      $$
+  		
+  		for vectors using angular brackets
+  		$$2\left \langle \frac{1}{x^2-1}\right \rangle$$
+  		
+  		for absolute values;
+  		$$2\left |\frac{1}{x^2-1}\right| $$
+  		There may be cases where you could need to open only one curly bracket especially in calculus
+  		
+  		$$\left.\frac{dy}{dx}\right |_{x=1}$$ \ldots
+  		
+  		 the period takes care of the other absolute bar. If you include a backslash left then you also need a backslash right for the same and that's where the period comes in.
+  		
+  		 you could also have different brackets being displayed in the same equation.
+  		 $$\left(\frac{1}{1+\left(\frac{1}{1+x}\right)}\right)$$
+  		 
+  		 
+  		 
+  		 
+  		 
+  		 
+  		 \subsection{TABLES}
+  		 
 	\end{document}
