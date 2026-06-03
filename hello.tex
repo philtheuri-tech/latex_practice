@@ -104,6 +104,8 @@
   		The equivalence class of $a$ is $[a]$
   		
   		\subsection{curly brackets}
+  		
+  		
   		The curly brackets act as a reserved word for latex hence it won't print out as int he case below:
   		
   		"The section $a$ is defined to be ${1, 2, 3}$."
@@ -152,26 +154,45 @@
   		 
   		\begin{table}[ht]
   			\centering
+  			\caption{these values represents the $f(z)$}
   	\def\arraystretch{1.5}
   		 \begin{tabular}{|c||c|c|c|c|c|}
   		 \hline
   		 \(x\) & 1 	& 2 & 3 & 4 & 5\\ \hline
-  		 $f(x)$ & 10 & 11 & 12 & 13 & 14\\ \hline
+  		 $f(z)$ & 10 & 11 & 12 & 13 & 14\\ \hline
   		 \end{tabular}
+  		 \end{table}
+  		 
+  		 
+  		 
+  		 
   		 
   		 \vspace{30pt}
   		 
-  		{\renewcommand{\arraystretch}{1.8}
+  		 
+  		 
+  		 
+  		 
+  		 
+  		 \begin{table}
+  		 	\centering
+  		 	 \caption{These values represents the function $f(y)$}
+  		\def\arraystretch{2.4}
   		  \begin{tabular}{|c||c|c|c|c|c|}
   		 	\hline
   		 	$x$ & 1 & 2 & 3 & 4 & 5\\ \hline
-  		 	$f(x)$ & $2\cdot \dfrac{1}{x^2} $ & 11 & 12 & 13 & 14\\ \hline
-  		 \end{tabular}}
+  		 	$f(y)$ & $2\cdot \dfrac{1}{x^2} $ & 11 & 12 & 13 & 14\\ \hline
+  		 \end{tabular}
   		 \end{table}
   		 
-  		 \vspace{30pt}
+  		 \vspace{40pt}
   		 
-  		 \def\arraystretch{1.8}
+  		 
+  		 
+  		 
+  		 
+  		 
+  		 \def\arraystretch{2.5}
   		 \begin{table}
   		 \centering
   		 \begin{tabular}{|c||c|c|c|c|c|}
@@ -180,16 +201,60 @@
   		 	$x$ & 1 & 2 & 3 & 4 & 5\\ \hline
   		 	$f(x)$ & $2\displaystyle\left(\frac{1}{x^2}\right)$ & 11 & 12 & 13 & 14\\ \hline
   		 	\end{tabular}
+  		 	\caption{these values represents the $f(x)$}
   		 	\end{table}
   		 The single dollar single dollar sign worked out because we wanted inline math mode and not display math mode. the display math mode covers a whole line .the best formulas for both inline math mode and display math mode are; 
   		 
   		 Inline math: \(\frac{3}{7}  \)
-  		 
-  		 Display math: \[x^2 +y^2 = z  \]The curved brackets and curly brackets are used for inline and display math mode respectively.
+  		   		 Display math: \[x^2 +y^2 = z  \]The curved brackets and curly brackets are used for inline and display math mode respectively.
   		 You must tell your compiler where you want your table to be lest it changes and places the table where it seems best using the backslash table H as illustrated in the code in line  \(\left(155\right)\) and end table in line \(\left(166\right)\). 
   		 
   		 This function tells the computer to place the table in a specific place close to where you placed your function and where there is enough space for a table to appear.
   		 
+  		 \subsection{Sentences in a table}
+  		
+  		There may be a case where you'd want to include one or more sentences in your table.It is advisable to include them starting from the left rather than the center.\\
+  		There may be a case where you may have two or more sentences that should be accommodated in the same column. In this case the column part changes from using a c to p say 2cm or 2in as written.\\
+  		
+  		(NB:THE COMPUTER DOESN'T UNDERSTAND FULL WORDS HENCE YOU SHOULD KEEP IN CONSIDERATION OF THESE SHORT FORMS OR SAY KEY WORDS)
+  		 \begin{table}
+  		 	\centering
+  		 	
+  		 	\caption{The relationship between $f$ and  $f'$}
+  		 	\begin{tabular}{|l|l|}
+  		 		\hline
+  		 		$f(x)$ & $f'(x)$\\ \hline
+  		 		$x>0$ & The function $f(x)$ is increasing\\ \hline
+  		 		
+  		 		
+  		 		\end{tabular}
+  		 \end{table}
   		 
   		 
+  		\vspace{40pt}
+  		
+  		  \begin{table}
+  		 	\centering
+  		 	
+  		 	\caption{The relationship between $f$ and  $f'$}
+  		 	\begin{tabular}{|l|p{3in}|}
+  		 		\hline
+  		 		$f(x)$ & $f'(x)$\\ \hline
+  		 		$x>0$ & The function $f(x)$ is increasing.
+  		 		The function $f(x)$ is increasing. function $f(x)$ is increasing.\\ \hline
+  		 		
+  		 	\end{tabular}
+  		 \end{table}
+  		 
+  		 
+  		$*****$ You can also do shading in tables as well as many other things \ldots to be studied later $*****$
+  		 \section{Equations of arrays}
+  		 
+  		
+  		 	arrays
+  		 	\begin{align}
+  		 		5x^2 \, \text{place your text here}
+  		 		\end{align}
+  		 		in math mode the computer completely ignores the spaces as you would have noticed earlier every time we entered into it. if you want the space to be noted by the computer then put a space bar after the curly bracket or force the computer by using a backslash comma to take care o the rest\\
+  		 	$$1:47:51$$
 	\end{document}

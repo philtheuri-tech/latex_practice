@@ -171,7 +171,7 @@
   		 
   		 \vspace{30pt}
   		 
-  		 \def\arraystretch{1.8}
+  		 \def\arraystretch{3}
   		 \begin{table}
   		 \centering
   		 \begin{tabular}{|c||c|c|c|c|c|}
@@ -180,6 +180,7 @@
   		 	$x$ & 1 & 2 & 3 & 4 & 5\\ \hline
   		 	$f(x)$ & $2\displaystyle\left(\frac{1}{x^2}\right)$ & 11 & 12 & 13 & 14\\ \hline
   		 	\end{tabular}
+  		 	\caption{these values represents the $f(x)$}
   		 	\end{table}
   		 The single dollar single dollar sign worked out because we wanted inline math mode and not display math mode. the display math mode covers a whole line .the best formulas for both inline math mode and display math mode are; 
   		 
@@ -190,6 +191,6 @@
   		 
   		 This function tells the computer to place the table in a specific place close to where you placed your function and where there is enough space for a table to appear.
   		 
-  		 
-  		 
+  		
+  		  
 	\end{document}
