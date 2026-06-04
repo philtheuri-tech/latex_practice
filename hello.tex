@@ -1,6 +1,8 @@
 \documentclass{article}
+\usepackage{ulem}
 \pagestyle{empty}
 \usepackage{amsmath, amssymb,amsfonts}
+\usepackage{enumerate}
 \parindent 0px
 
 	\title{MY FIRST \LaTeX{} DOCUMENT}
@@ -26,8 +28,8 @@
 	I am learning \LaTeX{} offline using TeXstudio and MiKTeX.
 	
 	
-	(the added section of parident is to forbid the computer from indenting my work and making it look shoddy. ie; to stop making new paragraphs unless i authorize it)
-	
+	(the added section of parident is to forbid the computer from indenting my work and making it look shoddy. ie; to stop making new paragraphs unless i authorize it)\\
+	(if you want to underline some words then use the backslash and brackets. for long sentences then add the package ulem.add in your line uline for a single line and uuline for double underlining or use backslash textbf open curly bracket backslash underline)
 	you can use the \textbf{backslash textbf to make your words bold}, \textit{backslash textit to make your words Italic}
 	\section{\underline{\LaTeX\ LEARNING}}
 	
@@ -42,8 +44,7 @@
 	\subsection{Subscripts}
 	
 	$$x_1$$
-	$$x_{12}$$
-	$$x_{1_2}$$
+	$$x_{1_{2}}$$
 	$$x_{1_{2_3}}$$
 	$$a_0,a_1,a_2,\ldots,a_{100}$$
 	$$\Pi$$
@@ -90,10 +91,10 @@
   \subsection{curved brackets}
   The distributive property states that $a(b+c)=ab+ac$, for all $a, b, c \in \mathbb{R}$.\\
   (Using the mathmode to display equations. For example i want to display a system of two equations i can use:\\
-  \begin{align}
+  \begin{align*}
   	2x + y &= 5\\
   	x -y &= 1
-  	\end{align}\\
+  	\end{align*}\\
   	
   	This merely creates two separate inline equations. You can't align the equal sign,number the equations, or treat them as one mathematical block hence you have to use the amsmath in this case.
   	the(dollar)symbol is used to line up the equal signs.\\[0.2pt]
@@ -252,9 +253,107 @@
   		 
   		
   		 	arrays
-  		 	\begin{align}
+  		 	\begin{align*}
   		 		5x^2 \, \text{place your text here}
-  		 		\end{align}
+  		 		\end{align*}
   		 		in math mode the computer completely ignores the spaces as you would have noticed earlier every time we entered into it. if you want the space to be noted by the computer then put a space bar after the curly bracket or force the computer by using a backslash comma to take care o the rest\\
-  		 	$$1:47:51$$
-	\end{document}
+  		 	
+  	\begin{align}
+  		5x^2-9=x+3\\
+  		5x^2-x-12=0
+  	\end{align}
+  		 
+  		 	
+  	\begin{align*}
+  		 		5x^2-9 &=x+3\\
+  		 		5x^2-x-12 & =0\\
+  		 		&=12+x-5^25
+  	\end{align*}
+  	The compiler itself numbers your equations hence it becomes easy to refer your equation at a later time.\\	 	
+  	In order for the equations to align themselves at the equal sign, include an amber sand
+  	before\\ 
+  	If you do not want your equations to be numbered then use an asterix in the align bracket both for the beginning and the end
+  	
+  		\begin{align}
+  		5x^2-9=x+3\\
+  		5x^2-x-12=0
+  	\end{align}
+  	 
+  	 \begin{align*}
+  	 5x^2-9 &=x+3\\
+  	 5x^2-x-12 & =0\\
+  	13 &=12+x-5^25
+  	 \end{align*}
+  	 
+  	 
+  	 
+  	 \section{CREATING LIST}
+  	 \subsection{Use of numbers, bullets and letters}
+  	 \subsubsection{numbers}
+  	 we want to number or list pour items but if you just use use normal listing then the compiler will just assume them and use one sentence instead as shown below;
+  	 pencil
+  	 calculator
+  	 ruler
+  	 notebook\\
+  	 using line breaks would also not be advisable as it would  not output the required format
+  	 
+  	 i is advisable to use a begin enumerate and end enumerate as shown below
+  	 
+  	 \begin{enumerate}
+  	 	\item pencil
+  	 	\item calculator
+  	 	\item notebook
+  	 	\item ruler
+  	 	\end{enumerate}
+  	 
+  	
+  	\uuline{ if you want a bulleted list then change from enumerate to itemize as shown below;}
+  	 \begin{itemize}
+  	 	\item pencil
+  	 	\item calculator 
+  	 	\item notebook
+  	 	\item ruler
+  	 \end{itemize}
+  	 \subsubsection{nested lists}
+  we can have a nested list ie; an enumerated list inside another enumerated list	 
+  	 \begin{enumerate}
+  	 	\item pencil
+  	 	\item calculator
+  	 	\item notebook
+  	 	\begin{enumerate}
+  	 		\item notes
+  	 		\item homework
+  	 		\item assignments
+  	 		\item assessments
+  	 		\begin{enumerate}
+  	 			\item Random assessment tests
+  	 			\item Continuous assessment test
+  	 			\item Quizzes
+  	 			\item journal entries
+  	 			
+  	 			
+  	 		\end{enumerate}
+  	 		\item diagrams
+  	 	\end{enumerate}
+  	 	\item highlighters
+  	 	\item ruler
+  	 \end{enumerate}
+  	 
+  	 \vspace{1cm}
+  	 
+  	 One may like  to use another method of listing rather than numbers or parenthesis.For that case you will require a package in order to load properly into your compiler\\
+  	\begin {enumerate}[A.]
+  	 \item pencil
+  	 \item calculator
+  	 \item notebook
+  	 \item ruler
+  	 \end{enumerate}
+  	 
+  	 \vspace{3in}
+  	 	\begin {enumerate}[1.]
+  	 \item pencil
+  	 \item calculator
+  	 \item notebook
+  	 \item ruler
+  	 \end{enumerate}
+\end{document}
