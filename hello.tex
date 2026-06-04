@@ -306,7 +306,7 @@
   	 	\item ruler
   	 	\end{enumerate}
   	 
-  	
+  	\pagebreak
   	\uuline{ if you want a bulleted list then change from enumerate to itemize as shown below;}
   	 \begin{itemize}
   	 	\item pencil
@@ -314,6 +314,8 @@
   	 	\item notebook
   	 	\item ruler
   	 \end{itemize}
+  	 
+  	 
   	 \subsubsection{nested lists}
   we can have a nested list ie; an enumerated list inside another enumerated list	 
   	 \begin{enumerate}
@@ -349,11 +351,81 @@
   	 \item ruler
   	 \end{enumerate}
   	 
-  	 \vspace{3in}
+  	 \vspace{3cm}
   	 	\begin {enumerate}[1.]
   	 \item pencil
   	 \item calculator
   	 \item notebook
   	 \item ruler
   	 \end{enumerate}
+  	 \vspace{0.1cm}
+  	 \begin {enumerate}[i.]
+  	 \item pencil
+  	 \item calculator
+  	 \item notebook
+  	 \item ruler
+  	 \end{enumerate}
+  	 
+  	 \vspace{0.1cm}
+  	 
+  	 \begin {enumerate}[.]
+  	 \item pencil
+  	 \item calculator
+  	 \item notebook
+  	 \item ruler
+  	 \end{enumerate}
+  	 
+  	 if you dont want your listing to start from one then you will add backslash setcounter then enumi and the number that you want your listing to begin.if you type 5, it will begin listing from 6.\\
+  	 
+  	 Example;
+  	 \begin {enumerate}\setcounter{enumi}{5}
+  	 \item pencil
+  	 \item calculator
+  	 \item notebook
+  	 \item ruler
+  	 \end{enumerate}
+  	 if your listing looks shoddy and you want it to appear in one page then use backslash page break
+  	 \pagebreak
+  	\begin{itemize}
+  		\item pencil
+  		\item calculator
+  		\item notebook
+  		\begin{itemize}
+  			\item notes
+  			\item homework
+  			\item assignments
+  			\item assessments
+  			\begin{enumerate}[a.]
+  				\item Random assessment tests
+  				\item Continuous assessment test
+  				\item Quizzes
+  				\item journal entries
+  				
+  				
+  			\end{enumerate}
+  			\item diagrams
+  		\end{itemize}
+  		\item highlighters
+  		\item ruler
+  	\end{itemize}
+  	
+  	in a case where you do not want your list to be numbered, then use square brackets but leave them empty as shown below;
+  	
+  	\begin {enumerate}[]
+  	\item pencil
+  	\item calculator
+  	\item notebook
+  	\item ruler
+  	\end{enumerate}
+  	
+  	you can also customize for any letter to appear manually as shown below
+  	\vspace{0.1cm}
+  	\begin {enumerate}
+  	\item[one.] pencil
+  	\item[a.] calculator
+  	\item[23.] notebook
+  	\item ruler
+  	\end{enumerate}
+  	
+  	
 \end{document}
