@@ -1,17 +1,19 @@
-\documentclass{article}
+\documentclass[a4paper,12pt]{article}
 \usepackage{ulem}
 \pagestyle{empty}
 \usepackage{amsmath, amssymb,amsfonts}
 \usepackage{enumerate}
 \parindent 0px
-
+\usepackage{fullpage}
+\usepackage{booktabs}
+\usepackage{array}
 	\title{MY FIRST \LaTeX{} DOCUMENT}
 	\author{PHILIP THEURI}
 	\date{\today}
 	
 	\begin{document}
-	
-	\maketitle
+	\tableofcontents
+		\maketitle
 	
 	This is my first document created offline using \LaTeX{}.
 	
@@ -33,7 +35,7 @@
 	you can use the \textbf{backslash textbf to make your words bold}, \textit{backslash textit to make your words Italic}
 	\section{\underline{\LaTeX\ LEARNING}}
 	
-	
+	The backslash pagebreak is to be used incase you see that your listing has gone to a new page but it wold have been fit for it to be included in one paragraph hence you move it to the next page.
 	\subsection{superscripts}
 	$$2x^3$$
 	
@@ -249,7 +251,7 @@
   		 
   		 
   		$*****$ You can also do shading in tables as well as many other things \ldots to be studied later $*****$
-  		 \section{Equations of arrays}
+  		 \section{\underline{EQUATIONS AF ARRAYS}}
   		 
   		
   		 	arrays
@@ -287,7 +289,7 @@
   	 
   	 
   	 
-  	 \section{CREATING LIST}
+  	 \section{\underline{CREATING LIST}}
   	 \subsection{Use of numbers, bullets and letters}
   	 \subsubsection{numbers}
   	 we want to number or list pour items but if you just use use normal listing then the compiler will just assume them and use one sentence instead as shown below;
@@ -305,8 +307,6 @@
   	 	\item notebook
   	 	\item ruler
   	 	\end{enumerate}
-  	 
-  	\pagebreak
   	\uuline{ if you want a bulleted list then change from enumerate to itemize as shown below;}
   	 \begin{itemize}
   	 	\item pencil

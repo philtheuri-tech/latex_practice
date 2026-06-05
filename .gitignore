@@ -5,3 +5,13 @@
 *.fls
 *.fdb_latexmk
 *.synctex.gz
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+*.lof
+*.lot
+#c compiled files
+*.exe
+*.o
