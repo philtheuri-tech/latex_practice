@@ -12,6 +12,9 @@
 *.vrb
 *.lof
 *.lot
+*.bcf
+*.run.xml
 #c compiled files
 *.exe
 *.o
+*.obj
