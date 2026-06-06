@@ -3,21 +3,103 @@
 \title{CONTINUATION OF NOTES}
 \author{Philip theuri}
 \date{\today}
+\usepackage{amssymb}
+\usepackage{siunitx}
+
+\usepackage{amsfonts}
+\def\eq1{y=\frac{x}{3x^2+x+1}}
+\usepackage{amsmath}
+\usepackage[top=1in, bottom=1in, left=0.5in, right=0.5in]{geometry}
+\newcommand{\R}{\mathbb{R}}
+
+\usepackage{float}
+
 \begin{document}
 	\tableofcontents
 \maketitle
 
 
-
-\section{PACKAGES, MACROS AND FILES}
-
+{
+\section{PACKAGES, MACROS AND GRAPHICS}
+\subsection{\centering{PACKAGES}}
 There are different packages that are required in order for the compiler to run perfectly.
-The are usually included between begin document and document class
+The are usually included in the preamble that is  between begin document and document class
+\begin{itemize}
+	\item The backslash geometry is important as it helps customize every page as without it there will be a very large space left between the page label and the end of the page. you can however customize it to it your own settings as done earlier.\\
+\item full page to change the format of the document ranging from width length to point of beginning of the document
+\item amsmath  - Advanced mathematical equations; provides align, cases, gather, split, etc.-used to align two or more equations\\
+\item amssymb     - Extra mathematical symbols such as $\mathbb{R}$, $\mathbb{N}$, $\mathbb{Z}$ \ldots special symbols like $\therefore$, $\because$ $\nexists$\\
+\item amsfonts     - Additional mathematical fonts; mainly used for commands like mathbb.\\
+\item amsthm       - Creates theorem, lemma, corollary, proposition, and definition environments.\\
+
+\item mathtools    - Extends amsmath with additional symbols and equation-formatting tools.
+graphicx     - Inserts and resizes images.\\
+\item float        - Controls the placement of figures and tables using options like [H].\\
+\item array        - Improves table and matrix formatting. especially where you need to place your figures center, left or right.
+\item booktabs     - Produces professional-looking tables using toprule, midrule, and bottomrule.these are much cleaner than repeated hline\\
+\item multirow     - Allows cells to span multiple rows in a table.\\
+
+\item geometry     - Adjusts page margins and page dimensions.\\
+
+\item fancyhdr     - Creates custom headers and footers. mostly used for assignments and reports\\
+
+\item hyperref     - Makes references, citations, URLs, and the table of contents clickable.\\
+
+\item cleveref     - Automatically formats references (Equation, Figure, Theorem, etc.).\\
+
+\item biblatex     - Handles bibliographies and citations. manages references too\ldots referring to einstein\\
+
+\item xcolor       - Adds colours to text, tables, and other elements.\\
+\item listings     - Displays source code with formatting.\\
+
+\item minted       - Displays source code with advanced syntax highlighting.it is like writting a code\\
+
+\item tikz         - Creates diagrams, graphs, flowcharts, vectors, and illustrations. eg tikzpicture or tikzcircuit
+\\it is extremely powerful\\
+
+\item pgfplots     - Draws mathematical graphs and plots.\\
+
+\item siunitx      - Formats scientific units and measurements correctly. eg 
+
+\item mhchem       - Typesets chemical equations and formulas.
+eg 
+\item multicol     - Creates multiple columns of text.\\
+
+\item textcomp     - Provides extra text symbols such as ° and \texteuro \textdegree
+ for additional symbols like the euro
+algorithm    - Creates algorithm environments.
+
+\item algpseudocode - Writes pseudocode inside algorithm environments.
+
+\item enumitem     - Customizes bullet and numbered lists.
+\item setspace     - Controls line spacing (single, 1.5, double).
+\item caption      - Customizes figure and table captions.
+\item subcaption   - Creates subfigures and subtables.
+\item titlesec     - Customizes section and chapter titles.
+\item appendix     - Helps organize appendices.
+\item csquotes     - Provides intelligent quotation marks and quotation environments.
+\end{itemize}
+
+\subsection*{{NOTES}}
+
+This is the symbol for the set of all real numbers;$\mathbb{R}$\\
+This is the symbol for the set  integers;$\mathbb{Z}$\\
+This is the symbol of for the set if rational numbers;$\mathbb{Q}$
 
 
--this package affects the size of the margins
-The default settings usually leaves a lot of space at the top and the sides
+\subsection{\centering{MACROS}}
 
+A \LaTeX{} macros is a user defined command that replaces a piece of text or code with a shorter command, allowing repetitive content to be written more efficiently and consistently throughout a document. It saves you time, make your document easy to maintain and avoid repeatedly typing the same code.
+it acts as a shortcut or abbreviation\\
+ example;
+$x \in \R$
+
+
+for an equation;
+$\eq1$
+we referred our equation as we defined it earlier at the preamble
+\subsection{\centering{GRAPHICS}}
+in this case you use this command to insert images to you pdf. usually the package graphicx is used then for the command, type backslash include graphics for scale choose any betwee 0 and 1. then insert your image name say limit. you may or may not include the png or jnx format of the image file.
 
 
 \end{document}
