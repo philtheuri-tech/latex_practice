@@ -7,6 +7,8 @@
 \usepackage{fullpage}
 \usepackage{booktabs}
 \usepackage{array}
+\usepackage{ulem}
+\usepackage[margin=1cm]{geometry}
 	\title{MY FIRST \LaTeX{} DOCUMENT}
 	\author{PHILIP THEURI}
 	\date{\today}
@@ -25,14 +27,12 @@
 	\end{enumerate}
 	\section{\underline{INTRODUCTION}}
 	
-	\LaTeX{} is used for creating professional reports, assignments, books and research paper
+	\LaTeX{} is used for creating professional reports, assignments, books and research paper\\
 	
-	I am learning \LaTeX{} offline using TeXstudio and MiKTeX.
-	
-	
-	(the added section of parident is to forbid the computer from indenting my work and making it look shoddy. ie; to stop making new paragraphs unless i authorize it)\\
+	The added section of parident is to forbid the computer from indenting my work and making it look shoddy. ie; to stop making new paragraphs unless i authorize it)\\
 	(if you want to underline some words then use the backslash and brackets. for long sentences then add the package ulem.add in your line uline for a single line and uuline for double underlining or use backslash textbf open curly bracket backslash underline)
 	you can use the \textbf{backslash textbf to make your words bold}, \textit{backslash textit to make your words Italic}
+	
 	\section{\underline{\LaTeX\ LEARNING}}
 	
 	The backslash pagebreak is to be used incase you see that your listing has gone to a new page but it wold have been fit for it to be included in one paragraph hence you move it to the next page.
@@ -254,7 +254,7 @@
   		$*****$ You can also do shading in tables as well as many other things \ldots to be studied later $*****$
   		 \section{\underline{EQUATIONS AF ARRAYS}}
   		 
-  		
+  		never use a dollar sign in align since the compiler itself is aware that you're in math mode.
   		 	arrays
   		 	\begin{align*}
   		 		5x^2 \, \text{place your text here}
